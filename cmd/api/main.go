@@ -1,14 +1,19 @@
 package main
 
-import "log"
+import (
+	"log"
+	"social/internal/env"
+)
 
 func main() {
 	cfg := config{
-		addr: ":9090",
+		addr: env.GetString("ADDR", ":9091"),
 	}
 	app := &application{
 		config: cfg,
+		logger: log.Default(),
 	}
 
-	log.Fatal(app.run())
+	mux := app.mount()
+	log.Fatal(app.run(mux))
 }
