@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"social/internal/store"
 	"time"
 
 	"github.com/go-chi/chi/v5"
@@ -12,10 +13,19 @@ import (
 type application struct {
 	logger *log.Logger
 	config config
+	store  store.Storage
 }
 
 type config struct {
 	addr string
+	db   dbConfig
+}
+
+type dbConfig struct {
+	addr         string
+	maxOpenConns int
+	maxIdleConns int
+	maxIdleTime  string
 }
 
 func (app *application) mount() http.Handler {
