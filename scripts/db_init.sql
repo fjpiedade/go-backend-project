@@ -1,26 +1,44 @@
-CREATE DATABASE social
+CREATE DATABASE social;
 
-CREATE TABLE users (
-    id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+-- extension to postgres
+CREATE EXTENSION IF NOT EXISTS citext;
+
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     username VARCHAR(255) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
-    update_at TIMESTAMP NOT NULL DEFAULT NOW()
+    password TEXT NOT NULL,
+    email CITEXT UNIQUE NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-CREATE TABLE posts (
+-- inverted operation
+DROP TABLE IF EXISTS users;
+
+-- ##########################################
+
+CREATE TABLE IF NOT EXISTS posts (
+    -- id BIGSERIAL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     content TEXT NOT NULL,
     title VARCHAR(255),
-    user_id VARCHAR(255),
+    user_id BIGINT,
     tags TEXT,
-    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
-    update_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     CONSTRAINT fk_post_user FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
+
+-- ALTER TABLE if not created the FK when table created
+
+-- add on up
+ALTER TABLE posts
+ADD CONSTRAINT fk_post_user FOREIGN KEY (user_id) REFERENCES users (id);
+
+-- add on down
+ALTER TABLE posts DROP CONSTRAINT fk_post_user;
 
 INSERT INTO
     users (
@@ -41,8 +59,8 @@ VALUES (
 INSERT INTO
     posts (title, content, user_id, tags)
 VALUES (
-        'Primeiro Post',
-        'Olá mundo!',
+        'First Post',
+        'Hello World!',
         1,
         'go,backend'
     );

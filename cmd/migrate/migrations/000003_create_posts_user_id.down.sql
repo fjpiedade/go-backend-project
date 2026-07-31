@@ -1,0 +1,3 @@
+ALTER TABLE posts DROP CONSTRAINT fk_posts_user;
+
+ALTER TABLE posts ALTER COLUMN user_id TYPE VARCHAR(255);
