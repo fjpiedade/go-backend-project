@@ -2,8 +2,9 @@ CREATE TABLE IF NOT EXISTS posts (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     content TEXT NOT NULL,
     title VARCHAR(255),
-    user_id VARCHAR(255),
-    tags TEXT,
+    user_id BIGINT,
+    tags TEXT[] NOT NULL DEFAULT '{}',
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    CONSTRAINT fk_post_user_id FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );

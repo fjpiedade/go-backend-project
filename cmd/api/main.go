@@ -1,7 +1,17 @@
+// @title           Social API
+// @version         1.0.0
+// @description     REST API for the social backend built with Go.
+//
+// @host            localhost:9090
+// @BasePath        /v1
+//
+// @contact.name    Fernando Piedade
+
 package main
 
 import (
 	"log"
+	_ "social/docs"
 	"social/internal/db"
 	"social/internal/env"
 	"social/internal/store"
@@ -9,7 +19,7 @@ import (
 
 func main() {
 	cfg := config{
-		addr: env.GetString("ADDR", ":9091"),
+		addr: env.GetString("ADDR", ":9090"),
 		db: dbConfig{
 			addr:         env.GetString("DB_ADDR", "postgres://postgres:postgres@localhost/social?sslmode=disable"),
 			maxOpenConns: env.GetInt("DB_MAX_OPEN_CONNS", 30),
