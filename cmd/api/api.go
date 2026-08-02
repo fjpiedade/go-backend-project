@@ -1,8 +1,13 @@
 package main
 
 import (
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+
 	"encoding/json"
-	"log"
+	"errors"
+	"fmt"
+	"log/slog"
+	"net"
 	"net/http"
 	"social/internal/store"
 	"time"
@@ -13,14 +18,17 @@ import (
 )
 
 type application struct {
-	logger *log.Logger
-	config config
-	store  store.Storage
+	logger  *slog.Logger
+	config  config
+	store   store.Storage
+	metrics *metrics
 }
 
 type config struct {
-	addr string
-	db   dbConfig
+	addr         string
+	metricsAddr  string
+	otelEndpoint string
+	db           dbConfig
 }
 
 type dbConfig struct {
@@ -32,9 +40,11 @@ type dbConfig struct {
 
 func (app *application) mount() http.Handler {
 	r := chi.NewRouter()
+
 	r.Use(middleware.RequestID)
 	r.Use(middleware.ClientIPFromRemoteAddr)
-	r.Use(middleware.Logger)
+	r.Use(app.slogMiddleware)
+	r.Use(app.prometheusMiddleware)
 	r.Use(middleware.Recoverer)
 	r.Use(middleware.Timeout(60 * time.Second))
 
@@ -58,21 +68,81 @@ func (app *application) mount() http.Handler {
 			r.Delete("/{id}", app.deletePostHandler)
 		})
 	})
-	return r
+
+	// envolve o router com instrumentação OTel
+	return otelhttp.NewHandler(r, "social-api")
 }
 
-func (app *application) run(mux http.Handler) error {
+func (app *application) slogMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		ww := middleware.NewWrapResponseWriter(w, r.ProtoMajor)
+		start := time.Now()
 
-	srv := &http.Server{
+		defer func() {
+			app.logger.Info("request",
+				"method", r.Method,
+				"path", r.URL.Path,
+				"status", ww.Status(),
+				"bytes", ww.BytesWritten(),
+				"duration", time.Since(start).String(),
+				"request_id", middleware.GetReqID(r.Context()),
+			)
+		}()
+
+		next.ServeHTTP(ww, r)
+	})
+}
+
+// func (app *application) run(mux http.Handler) error {
+
+// 	srv := &http.Server{
+// 		Addr:         app.config.addr,
+// 		Handler:      mux,
+// 		WriteTimeout: time.Second * 30,
+// 		ReadTimeout:  time.Second * 10,
+// 		IdleTimeout:  time.Minute,
+// 	}
+
+// 	//log.Printf("Server has started at %s", app.config.addr)
+// 	app.logger.Info("server started", "addr", app.config.addr)
+// 	return srv.ListenAndServe()
+// }
+
+func (app *application) run(mux http.Handler) error {
+	metricsListener, err := net.Listen("tcp", app.config.metricsAddr)
+	if err != nil {
+		return fmt.Errorf("start metrics listener: %w", err)
+	}
+
+	metricsServer := &http.Server{
+		Handler:           app.metrics.handler(),
+		ReadHeaderTimeout: 5 * time.Second,
+	}
+
+	go func() {
+		app.logger.Info(
+			"metrics server started",
+			"addr", app.config.metricsAddr,
+			"endpoint", "/metrics",
+		)
+
+		if err := metricsServer.Serve(metricsListener); err != nil &&
+			!errors.Is(err, http.ErrServerClosed) {
+			app.logger.Error("metrics server error", "error", err)
+		}
+	}()
+
+	apiServer := &http.Server{
 		Addr:         app.config.addr,
 		Handler:      mux,
-		WriteTimeout: time.Second * 30,
-		ReadTimeout:  time.Second * 10,
+		WriteTimeout: 30 * time.Second,
+		ReadTimeout:  10 * time.Second,
 		IdleTimeout:  time.Minute,
 	}
 
-	log.Printf("Server has started at %s", app.config.addr)
-	return srv.ListenAndServe()
+	app.logger.Info("API server started", "addr", app.config.addr)
+
+	return apiServer.ListenAndServe()
 }
 
 func (app *application) writeJSON(w http.ResponseWriter, status int, data any) error {
@@ -96,26 +166,46 @@ func (app *application) writeJSONError(w http.ResponseWriter, status int, messag
 }
 
 func (app *application) internalServerError(w http.ResponseWriter, r *http.Request, err error) {
-	app.logger.Printf("internal server error: %s path: %s error: %s", r.Method, r.URL.Path, err)
+	app.logger.Error("internal server error",
+		"method", r.Method,
+		"path", r.URL.Path,
+		"error", err,
+	)
 	app.writeJSONError(w, http.StatusInternalServerError, "the server encountered a problem")
 }
 
 func (app *application) badRequestError(w http.ResponseWriter, r *http.Request, err error) {
-	app.logger.Printf("bad request error: %s path: %s error: %s", r.Method, r.URL.Path, err)
+	app.logger.Warn("bad request error",
+		"method", r.Method,
+		"path", r.URL.Path,
+		"error", err,
+	)
 	app.writeJSONError(w, http.StatusBadRequest, err.Error())
 }
 
 func (app *application) notFoundError(w http.ResponseWriter, r *http.Request, err error) {
-	app.logger.Printf("not found error: %s path: %s error: %s", r.Method, r.URL.Path, err)
+	app.logger.Warn("not found",
+		"method", r.Method,
+		"path", r.URL.Path,
+		"error", err,
+	)
 	app.writeJSONError(w, http.StatusNotFound, "not found")
 }
 
 func (app *application) conflictError(w http.ResponseWriter, r *http.Request, err error) {
-	app.logger.Printf("conflict error: %s path: %s error: %s", r.Method, r.URL.Path, err)
+	app.logger.Warn("conflict",
+		"method", r.Method,
+		"path", r.URL.Path,
+		"error", err,
+	)
 	app.writeJSONError(w, http.StatusConflict, err.Error())
 }
 
 func (app *application) unprocessableEntityError(w http.ResponseWriter, r *http.Request, err error) {
-	app.logger.Printf("unprocessable entity error: %s path: %s error: %s", r.Method, r.URL.Path, err)
+	app.logger.Warn("unprocessable entity",
+		"method", r.Method,
+		"path", r.URL.Path,
+		"error", err,
+	)
 	app.writeJSONError(w, http.StatusUnprocessableEntity, err.Error())
 }

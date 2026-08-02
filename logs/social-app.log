@@ -1,0 +1,198 @@
+{"time":"2026-08-01T18:34:31.129561+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:34:31.13029+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T18:34:36.574382+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:34:36.574889+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T18:34:55.294543+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:34:55.294879+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T18:36:27.195753+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/1","status":200,"bytes":199,"duration":"9.986007ms","request_id":"fjpiedade/GlePKypZPu-000001"}
+{"time":"2026-08-01T18:36:30.702588+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-01T18:36:30.702831+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"16.504021ms","request_id":"fjpiedade/GlePKypZPu-000002"}
+{"time":"2026-08-01T18:36:36.195571+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-01T18:36:36.195676+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.602265ms","request_id":"fjpiedade/GlePKypZPu-000003"}
+{"time":"2026-08-01T18:36:36.652075+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-01T18:36:36.652162+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.246749ms","request_id":"fjpiedade/GlePKypZPu-000004"}
+{"time":"2026-08-01T18:36:36.833662+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-01T18:36:36.83375+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.284342ms","request_id":"fjpiedade/GlePKypZPu-000005"}
+{"time":"2026-08-01T18:36:37.034883+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-01T18:36:37.035049+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.146297ms","request_id":"fjpiedade/GlePKypZPu-000006"}
+{"time":"2026-08-01T18:36:41.812259+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.946371ms","request_id":"fjpiedade/GlePKypZPu-000007"}
+{"time":"2026-08-01T18:36:42.409203+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.325313ms","request_id":"fjpiedade/GlePKypZPu-000008"}
+{"time":"2026-08-01T18:36:42.615204+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.498625ms","request_id":"fjpiedade/GlePKypZPu-000009"}
+{"time":"2026-08-01T18:37:43.959067+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:37:43.959521+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T18:38:51.540916+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:38:51.541304+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T18:38:56.666749+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"2.475509ms","request_id":"fjpiedade/v1vtpPVNz4-000001"}
+{"time":"2026-08-01T18:38:57.215529+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.80322ms","request_id":"fjpiedade/v1vtpPVNz4-000002"}
+{"time":"2026-08-01T18:38:57.416302+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.673245ms","request_id":"fjpiedade/v1vtpPVNz4-000003"}
+{"time":"2026-08-01T18:38:57.590269+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.445677ms","request_id":"fjpiedade/v1vtpPVNz4-000004"}
+{"time":"2026-08-01T18:38:57.794499+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.476706ms","request_id":"fjpiedade/v1vtpPVNz4-000005"}
+{"time":"2026-08-01T18:45:25.423737+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:45:25.424488+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T18:45:36.913826+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:45:36.914398+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T23:29:21.441033+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T23:29:21.441903+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T23:30:22.26194+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T23:30:22.262687+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T23:31:40.119634+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T23:31:40.120482+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T23:32:24.998953+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T23:32:24.999763+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T23:33:06.427223+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T23:33:06.428117+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T23:34:25.159601+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T23:34:25.16101+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T23:34:51.46465+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T23:34:51.465351+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-02T00:09:12.14438+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T00:09:12.145962+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T00:09:12.145994+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T00:11:04.969035+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T00:11:04.969805+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"926.723µs","request_id":"fjpiedade/RFXtYhoept-000001"}
+{"time":"2026-08-02T00:11:09.052176+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"11.108789ms","request_id":"fjpiedade/RFXtYhoept-000002"}
+{"time":"2026-08-02T00:11:14.486003+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"23.782473ms","request_id":"fjpiedade/RFXtYhoept-000003"}
+{"time":"2026-08-02T00:11:19.238679+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T00:11:19.239176+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.958386ms","request_id":"fjpiedade/RFXtYhoept-000004"}
+{"time":"2026-08-02T01:01:16.92002+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:01:16.920672+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"689.447µs","request_id":"fjpiedade/RFXtYhoept-000005"}
+{"time":"2026-08-02T01:01:17.598102+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:01:17.598234+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"146.786µs","request_id":"fjpiedade/RFXtYhoept-000006"}
+{"time":"2026-08-02T01:01:17.83777+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:01:17.837864+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"118.831µs","request_id":"fjpiedade/RFXtYhoept-000007"}
+{"time":"2026-08-02T01:01:18.022966+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:01:18.023064+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"125.911µs","request_id":"fjpiedade/RFXtYhoept-000008"}
+{"time":"2026-08-02T01:01:18.178514+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:01:18.178615+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"112.98µs","request_id":"fjpiedade/RFXtYhoept-000009"}
+{"time":"2026-08-02T01:01:24.353962+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"34.172119ms","request_id":"fjpiedade/RFXtYhoept-000010"}
+{"time":"2026-08-02T01:01:24.825821+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.458951ms","request_id":"fjpiedade/RFXtYhoept-000011"}
+{"time":"2026-08-02T01:01:24.982375+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.532956ms","request_id":"fjpiedade/RFXtYhoept-000012"}
+{"time":"2026-08-02T01:01:25.125378+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.456131ms","request_id":"fjpiedade/RFXtYhoept-000013"}
+{"time":"2026-08-02T01:01:25.309458+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"3.748612ms","request_id":"fjpiedade/RFXtYhoept-000014"}
+{"time":"2026-08-02T01:01:25.464249+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.856358ms","request_id":"fjpiedade/RFXtYhoept-000015"}
+{"time":"2026-08-02T01:01:25.639163+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.360911ms","request_id":"fjpiedade/RFXtYhoept-000016"}
+{"time":"2026-08-02T01:01:29.685065+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"2.582652ms","request_id":"fjpiedade/RFXtYhoept-000017"}
+{"time":"2026-08-02T01:01:30.13135+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.479064ms","request_id":"fjpiedade/RFXtYhoept-000018"}
+{"time":"2026-08-02T01:01:30.321159+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.965992ms","request_id":"fjpiedade/RFXtYhoept-000019"}
+{"time":"2026-08-02T01:01:30.522407+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.538189ms","request_id":"fjpiedade/RFXtYhoept-000020"}
+{"time":"2026-08-02T01:01:30.696372+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.426455ms","request_id":"fjpiedade/RFXtYhoept-000021"}
+{"time":"2026-08-02T01:01:30.889788+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.599706ms","request_id":"fjpiedade/RFXtYhoept-000022"}
+{"time":"2026-08-02T01:01:31.058525+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.816765ms","request_id":"fjpiedade/RFXtYhoept-000023"}
+{"time":"2026-08-02T01:01:31.238688+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.157606ms","request_id":"fjpiedade/RFXtYhoept-000024"}
+{"time":"2026-08-02T01:01:36.946352+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:01:36.946457+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.459102ms","request_id":"fjpiedade/RFXtYhoept-000025"}
+{"time":"2026-08-02T01:01:37.915818+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:01:37.915939+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.266254ms","request_id":"fjpiedade/RFXtYhoept-000026"}
+{"time":"2026-08-02T01:01:38.095951+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:01:38.096056+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.157272ms","request_id":"fjpiedade/RFXtYhoept-000027"}
+{"time":"2026-08-02T01:01:38.297385+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:01:38.297503+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.170882ms","request_id":"fjpiedade/RFXtYhoept-000028"}
+{"time":"2026-08-02T01:01:38.49007+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:01:38.490193+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.126454ms","request_id":"fjpiedade/RFXtYhoept-000029"}
+{"time":"2026-08-02T01:03:14.614153+01:00","level":"WARN","msg":"not found","method":"DELETE","path":"/v1/users/200","error":"record not found"}
+{"time":"2026-08-02T01:03:14.614698+01:00","level":"INFO","msg":"request","method":"DELETE","path":"/v1/users/200","status":404,"bytes":22,"duration":"14.932276ms","request_id":"fjpiedade/RFXtYhoept-000030"}
+{"time":"2026-08-02T01:03:31.938262+01:00","level":"WARN","msg":"not found","method":"PATCH","path":"/v1/users/123","error":"record not found"}
+{"time":"2026-08-02T01:03:31.93885+01:00","level":"INFO","msg":"request","method":"PATCH","path":"/v1/users/123","status":404,"bytes":22,"duration":"2.996299ms","request_id":"fjpiedade/RFXtYhoept-000031"}
+{"time":"2026-08-02T01:04:04.474814+01:00","level":"WARN","msg":"unprocessable entity","method":"POST","path":"/v1/posts","error":"related record not found"}
+{"time":"2026-08-02T01:04:04.475205+01:00","level":"INFO","msg":"request","method":"POST","path":"/v1/posts","status":422,"bytes":37,"duration":"45.383987ms","request_id":"fjpiedade/RFXtYhoept-000032"}
+{"time":"2026-08-02T01:04:20.208+01:00","level":"WARN","msg":"bad request error","method":"POST","path":"/v1/posts","error":"title, content and user_id are required"}
+{"time":"2026-08-02T01:04:20.208101+01:00","level":"INFO","msg":"request","method":"POST","path":"/v1/posts","status":400,"bytes":52,"duration":"136.214µs","request_id":"fjpiedade/RFXtYhoept-000033"}
+{"time":"2026-08-02T01:04:35.939918+01:00","level":"WARN","msg":"bad request error","method":"POST","path":"/v1/posts","error":"title, content and user_id are required"}
+{"time":"2026-08-02T01:04:35.940024+01:00","level":"INFO","msg":"request","method":"POST","path":"/v1/posts","status":400,"bytes":52,"duration":"141.193µs","request_id":"fjpiedade/RFXtYhoept-000034"}
+{"time":"2026-08-02T01:04:51.531037+01:00","level":"WARN","msg":"bad request error","method":"POST","path":"/v1/posts","error":"json: cannot unmarshal number into Go struct field .tags of type []string"}
+{"time":"2026-08-02T01:04:51.53115+01:00","level":"INFO","msg":"request","method":"POST","path":"/v1/posts","status":400,"bytes":86,"duration":"147.011µs","request_id":"fjpiedade/RFXtYhoept-000035"}
+{"time":"2026-08-02T01:05:17.132397+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.352323ms","request_id":"fjpiedade/RFXtYhoept-000036"}
+{"time":"2026-08-02T01:06:01.938226+01:00","level":"ERROR","msg":"internal server error","method":"GET","path":"/v1/users","error":"dial tcp [::1]:5432: connect: connection refused"}
+{"time":"2026-08-02T01:06:01.939676+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":500,"bytes":45,"duration":"3.697792ms","request_id":"fjpiedade/RFXtYhoept-000037"}
+{"time":"2026-08-02T01:06:12.56968+01:00","level":"ERROR","msg":"internal server error","method":"GET","path":"/v1/users","error":"dial tcp [::1]:5432: connect: connection refused"}
+{"time":"2026-08-02T01:06:12.569848+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":500,"bytes":45,"duration":"1.550349ms","request_id":"fjpiedade/RFXtYhoept-000038"}
+{"time":"2026-08-02T01:06:13.426084+01:00","level":"ERROR","msg":"internal server error","method":"GET","path":"/v1/users","error":"dial tcp [::1]:5432: connect: connection refused"}
+{"time":"2026-08-02T01:06:13.426163+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":500,"bytes":45,"duration":"851.649µs","request_id":"fjpiedade/RFXtYhoept-000039"}
+{"time":"2026-08-02T01:06:17.348815+01:00","level":"ERROR","msg":"internal server error","method":"GET","path":"/v1/users/100","error":"dial tcp [::1]:5432: connect: connection refused"}
+{"time":"2026-08-02T01:06:17.348901+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":500,"bytes":45,"duration":"857.631µs","request_id":"fjpiedade/RFXtYhoept-000040"}
+{"time":"2026-08-02T01:06:22.283049+01:00","level":"ERROR","msg":"internal server error","method":"DELETE","path":"/v1/users/200","error":"dial tcp [::1]:5432: connect: connection refused"}
+{"time":"2026-08-02T01:06:22.283577+01:00","level":"INFO","msg":"request","method":"DELETE","path":"/v1/users/200","status":500,"bytes":45,"duration":"1.431804ms","request_id":"fjpiedade/RFXtYhoept-000041"}
+{"time":"2026-08-02T01:09:24.059223+01:00","level":"WARN","msg":"not found","method":"DELETE","path":"/v1/users/200","error":"record not found"}
+{"time":"2026-08-02T01:09:24.060886+01:00","level":"INFO","msg":"request","method":"DELETE","path":"/v1/users/200","status":404,"bytes":22,"duration":"24.849571ms","request_id":"fjpiedade/RFXtYhoept-000042"}
+{"time":"2026-08-02T01:09:32.133689+01:00","level":"WARN","msg":"not found","method":"PATCH","path":"/v1/users/123","error":"record not found"}
+{"time":"2026-08-02T01:09:32.133801+01:00","level":"INFO","msg":"request","method":"PATCH","path":"/v1/users/123","status":404,"bytes":22,"duration":"2.595397ms","request_id":"fjpiedade/RFXtYhoept-000043"}
+{"time":"2026-08-02T01:09:43.68091+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:09:43.681028+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.384035ms","request_id":"fjpiedade/RFXtYhoept-000044"}
+{"time":"2026-08-02T01:09:47.358128+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"2.046098ms","request_id":"fjpiedade/RFXtYhoept-000045"}
+{"time":"2026-08-02T01:09:53.048656+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"3.119546ms","request_id":"fjpiedade/RFXtYhoept-000046"}
+{"time":"2026-08-02T01:09:59.801659+01:00","level":"WARN","msg":"unprocessable entity","method":"POST","path":"/v1/posts","error":"related record not found"}
+{"time":"2026-08-02T01:09:59.801873+01:00","level":"INFO","msg":"request","method":"POST","path":"/v1/posts","status":422,"bytes":37,"duration":"3.417983ms","request_id":"fjpiedade/RFXtYhoept-000047"}
+{"time":"2026-08-02T01:10:04.639159+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:10:04.63924+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"113.376µs","request_id":"fjpiedade/RFXtYhoept-000048"}
+{"time":"2026-08-02T01:26:41.544876+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:26:41.546256+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:26:41.546274+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:27:02.363151+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:27:02.364114+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:27:02.364192+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:29:29.069208+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:29:29.069846+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:29:29.069871+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:30:50.952845+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:30:50.953537+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:30:50.953601+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:32:21.457824+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:32:21.458268+01:00","level":"INFO","msg":"tracer initialized","endpoint":""}
+{"time":"2026-08-02T01:32:21.458653+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:32:21.458683+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:32:50.850393+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:32:50.851236+01:00","level":"INFO","msg":"tracer initialized","endpoint":"localhost:4318"}
+{"time":"2026-08-02T01:32:50.851865+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:32:50.851893+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:33:46.272203+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:33:46.273014+01:00","level":"INFO","msg":"tracer initialized","endpoint":"localhost:4318"}
+{"time":"2026-08-02T01:33:46.273721+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:33:46.273745+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:36:18.650795+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:36:18.651281+01:00","level":"INFO","msg":"tracer initialized","endpoint":"localhost:4318"}
+{"time":"2026-08-02T01:36:18.651682+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:36:18.651738+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:39:36.458661+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-02T01:39:36.459568+01:00","level":"INFO","msg":"tracer initialized","endpoint":"localhost:4318"}
+{"time":"2026-08-02T01:39:36.460016+01:00","level":"INFO","msg":"API server started","addr":":9090"}
+{"time":"2026-08-02T01:39:36.46005+01:00","level":"INFO","msg":"metrics server started","addr":"127.0.0.1:9091","endpoint":"/metrics"}
+{"time":"2026-08-02T01:40:16.715013+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:40:16.715703+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"750.49µs","request_id":"fjpiedade/7u1TX5xerP-000001"}
+{"time":"2026-08-02T01:40:19.748969+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:40:19.749131+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"201.553µs","request_id":"fjpiedade/7u1TX5xerP-000002"}
+{"time":"2026-08-02T01:40:20.119741+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:40:20.119865+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"140.041µs","request_id":"fjpiedade/7u1TX5xerP-000003"}
+{"time":"2026-08-02T01:40:20.371109+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-02T01:40:20.371201+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"112.645µs","request_id":"fjpiedade/7u1TX5xerP-000004"}
+{"time":"2026-08-02T01:40:25.806887+01:00","level":"WARN","msg":"unprocessable entity","method":"POST","path":"/v1/posts","error":"related record not found"}
+{"time":"2026-08-02T01:40:25.807327+01:00","level":"INFO","msg":"request","method":"POST","path":"/v1/posts","status":422,"bytes":37,"duration":"5.309323ms","request_id":"fjpiedade/7u1TX5xerP-000005"}
+{"time":"2026-08-02T01:40:30.385598+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.83638ms","request_id":"fjpiedade/7u1TX5xerP-000006"}
+{"time":"2026-08-02T01:40:30.72701+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"1.95346ms","request_id":"fjpiedade/7u1TX5xerP-000007"}
+{"time":"2026-08-02T01:40:30.981065+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.75533ms","request_id":"fjpiedade/7u1TX5xerP-000008"}
+{"time":"2026-08-02T01:40:31.261497+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.002573ms","request_id":"fjpiedade/7u1TX5xerP-000009"}
+{"time":"2026-08-02T01:40:35.210375+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.736853ms","request_id":"fjpiedade/7u1TX5xerP-000010"}
+{"time":"2026-08-02T01:40:35.575595+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.05977ms","request_id":"fjpiedade/7u1TX5xerP-000011"}
+{"time":"2026-08-02T01:40:35.766128+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.730388ms","request_id":"fjpiedade/7u1TX5xerP-000012"}
+{"time":"2026-08-02T01:40:35.953732+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"1.403499ms","request_id":"fjpiedade/7u1TX5xerP-000013"}
+{"time":"2026-08-02T01:40:40.416526+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:40:40.416695+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.792098ms","request_id":"fjpiedade/7u1TX5xerP-000014"}
+{"time":"2026-08-02T01:40:40.842595+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:40:40.842775+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.930013ms","request_id":"fjpiedade/7u1TX5xerP-000015"}
+{"time":"2026-08-02T01:40:41.039789+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:40:41.039991+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"3.208123ms","request_id":"fjpiedade/7u1TX5xerP-000016"}
+{"time":"2026-08-02T01:40:41.215941+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-02T01:40:41.232949+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"19.133579ms","request_id":"fjpiedade/7u1TX5xerP-000017"}
+{"time":"2026-08-02T01:40:45.369326+01:00","level":"WARN","msg":"not found","method":"DELETE","path":"/v1/users/200","error":"record not found"}
+{"time":"2026-08-02T01:40:45.369807+01:00","level":"INFO","msg":"request","method":"DELETE","path":"/v1/users/200","status":404,"bytes":22,"duration":"2.766338ms","request_id":"fjpiedade/7u1TX5xerP-000018"}
+{"time":"2026-08-02T01:40:45.6862+01:00","level":"WARN","msg":"not found","method":"DELETE","path":"/v1/users/200","error":"record not found"}
+{"time":"2026-08-02T01:40:45.686337+01:00","level":"INFO","msg":"request","method":"DELETE","path":"/v1/users/200","status":404,"bytes":22,"duration":"2.733924ms","request_id":"fjpiedade/7u1TX5xerP-000019"}
+{"time":"2026-08-02T01:40:45.890984+01:00","level":"WARN","msg":"not found","method":"DELETE","path":"/v1/users/200","error":"record not found"}
+{"time":"2026-08-02T01:40:45.891138+01:00","level":"INFO","msg":"request","method":"DELETE","path":"/v1/users/200","status":404,"bytes":22,"duration":"2.791272ms","request_id":"fjpiedade/7u1TX5xerP-000020"}
+{"time":"2026-08-02T01:40:46.098965+01:00","level":"WARN","msg":"not found","method":"DELETE","path":"/v1/users/200","error":"record not found"}
+{"time":"2026-08-02T01:40:46.099161+01:00","level":"INFO","msg":"request","method":"DELETE","path":"/v1/users/200","status":404,"bytes":22,"duration":"2.458693ms","request_id":"fjpiedade/7u1TX5xerP-000021"}
+{"time":"2026-08-02T01:40:54.829139+01:00","level":"WARN","msg":"not found","method":"PATCH","path":"/v1/users/123","error":"record not found"}
+{"time":"2026-08-02T01:40:54.829664+01:00","level":"INFO","msg":"request","method":"PATCH","path":"/v1/users/123","status":404,"bytes":22,"duration":"2.857759ms","request_id":"fjpiedade/7u1TX5xerP-000022"}
+{"time":"2026-08-02T01:40:55.132582+01:00","level":"WARN","msg":"not found","method":"PATCH","path":"/v1/users/123","error":"record not found"}
+{"time":"2026-08-02T01:40:55.132744+01:00","level":"INFO","msg":"request","method":"PATCH","path":"/v1/users/123","status":404,"bytes":22,"duration":"3.317131ms","request_id":"fjpiedade/7u1TX5xerP-000023"}
+{"time":"2026-08-02T01:40:55.339041+01:00","level":"WARN","msg":"not found","method":"PATCH","path":"/v1/users/123","error":"record not found"}
+{"time":"2026-08-02T01:40:55.339182+01:00","level":"INFO","msg":"request","method":"PATCH","path":"/v1/users/123","status":404,"bytes":22,"duration":"3.168461ms","request_id":"fjpiedade/7u1TX5xerP-000024"}

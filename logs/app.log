@@ -1,0 +1,12 @@
+{"time":"2026-08-01T18:26:55.2079+01:00","level":"INFO","msg":"database connection pool established"}
+{"time":"2026-08-01T18:26:55.208273+01:00","level":"INFO","msg":"server started","addr":":9090"}
+{"time":"2026-08-01T18:28:44.992672+01:00","level":"INFO","msg":"health check requested","method":"GET","path":"/v1/health"}
+{"time":"2026-08-01T18:28:44.993605+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/health","status":200,"bytes":41,"duration":"1.034662ms","request_id":"fjpiedade/HDTwbpdGLe-000001"}
+{"time":"2026-08-01T18:28:49.767444+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"4.099799ms","request_id":"fjpiedade/HDTwbpdGLe-000002"}
+{"time":"2026-08-01T18:28:50.563469+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"2.184402ms","request_id":"fjpiedade/HDTwbpdGLe-000003"}
+{"time":"2026-08-01T18:28:51.135562+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"3.543225ms","request_id":"fjpiedade/HDTwbpdGLe-000004"}
+{"time":"2026-08-01T18:28:51.371507+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/posts/1","status":200,"bytes":194,"duration":"3.156463ms","request_id":"fjpiedade/HDTwbpdGLe-000005"}
+{"time":"2026-08-01T18:28:56.648911+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users","status":200,"bytes":381,"duration":"2.150107ms","request_id":"fjpiedade/HDTwbpdGLe-000006"}
+{"time":"2026-08-01T18:29:06.946814+01:00","level":"WARN","msg":"not found","method":"GET","path":"/v1/users/100","error":"record not found"}
+{"time":"2026-08-01T18:29:06.946934+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/100","status":404,"bytes":22,"duration":"2.23257ms","request_id":"fjpiedade/HDTwbpdGLe-000007"}
+{"time":"2026-08-01T18:29:20.25942+01:00","level":"INFO","msg":"request","method":"GET","path":"/v1/users/1","status":200,"bytes":199,"duration":"3.152546ms","request_id":"fjpiedade/HDTwbpdGLe-000008"}
